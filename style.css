@@ -1,0 +1,531 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.logo img {
+  width: 150px;
+  margin-top: 5px;
+}
+
+.navSide {
+  position: fixed;
+  top: 0;
+  right: 0;
+  background: #F5F5F5;
+  -webkit-box-shadow: 15px 0px 25px 5px black;
+          box-shadow: 15px 0px 25px 5px black;
+  width: 350px;
+  padding-top: 65px;
+  padding-left: 50px;
+  z-index: 5;
+  height: 100%;
+  -webkit-transform: translateX(110%);
+          transform: translateX(110%);
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+}
+
+.navSide .fa-times {
+  position: absolute;
+  top: 15px;
+  right: 25px;
+  font-size: 25px;
+  cursor: pointer;
+  -webkit-transition: 200ms ease;
+  transition: 200ms ease;
+}
+
+.navSide .fa-times:hover {
+  color: gray;
+}
+
+.navSide ul {
+  padding-top: 15px;
+}
+
+.navSide ul li {
+  margin-top: 25px;
+  list-style: none;
+  font-size: 20px;
+  color: #757575;
+  font-weight: 600;
+  cursor: pointer;
+  -webkit-transition: 300ms ease;
+  transition: 300ms ease;
+}
+
+.navSide ul li:hover {
+  text-decoration: underline;
+}
+
+.navSide button {
+  text-transform: uppercase;
+  background: #FAA017;
+  border-radius: 50px;
+  color: #08384D !important;
+  font-weight: bold;
+  padding: 5px 25px;
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
+  border: none;
+  border: 2px solid #F5F5F5;
+}
+
+.navSide button:focus {
+  outline: none;
+}
+
+.navSide button:hover {
+  background: #F5F5F5;
+  border: 2px solid #FAA017;
+  color: #FAA017;
+}
+
+.navSide img {
+  width: 200px;
+}
+
+.navSide.active {
+  -webkit-transform: translateX(0%);
+          transform: translateX(0%);
+}
+
+.menuBarSection {
+  background-color: #DBF5F8;
+}
+
+#overlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.596);
+  opacity: 0;
+  z-index: 1;
+  pointer-events: none;
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
+}
+
+#overlay.active {
+  opacity: 1;
+  pointer-events: all;
+}
+
+header {
+  padding-top: 10px;
+}
+
+header .responsiveNavIcon {
+  font-size: 30px;
+  display: none;
+  cursor: pointer;
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
+}
+
+header .responsiveNavIcon:hover {
+  color: #757575;
+}
+
+header .container_width {
+  width: 80%;
+  margin: 0 auto;
+}
+
+header .container_width .listItems ul {
+  margin-top: 10px;
+  text-transform: uppercase;
+}
+
+header .container_width .listItems ul li {
+  list-style: none;
+  padding-left: 40px;
+  color: #757575;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+header .container_width .listItems ul button {
+  text-transform: uppercase;
+  background: #FAA017;
+  border-radius: 50px;
+  color: #08384D !important;
+  font-weight: bold;
+  padding: 5px 25px;
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
+  border: none;
+  border: 2px solid #F5F5F5;
+}
+
+header .container_width .listItems ul button:focus {
+  outline: none;
+}
+
+header .container_width .listItems ul button:hover {
+  background: #F5F5F5;
+  border: 2px solid #FAA017;
+  color: #FAA017;
+}
+
+.container_Field {
+  padding-top: 65px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.container_Field .inputFieldAnswers {
+  position: relative;
+}
+
+.container_Field .inputFieldAnswers .fa-search {
+  position: absolute;
+  top: 12px;
+  right: 20px;
+  font-size: 25px;
+  color: #F3B556;
+  cursor: pointer;
+  -webkit-transition: 300ms ease;
+  transition: 300ms ease;
+}
+
+.container_Field .inputFieldAnswers .fa-search:hover {
+  color: #f09815;
+}
+
+.container_Field .inputFieldAnswers input {
+  padding: 12px 20px;
+  border-radius: 50px;
+  border: 1px solid #b4b4b4;
+  width: 100%;
+  font-weight: 500;
+}
+
+.container_Field .inputFieldAnswers input:focus {
+  outline: none;
+}
+
+.Gradely {
+  padding-top: 50px;
+  padding-bottom: 15px;
+}
+
+.Gradely .support .gradelyParent {
+  color: #2A4F77;
+}
+
+.Gradely .support p {
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.GradelyParentSection {
+  width: 100%;
+  background: #F5F5F5;
+}
+
+.GradelyParentSection .container_gradelyParent {
+  border-bottom: 1px solid #c5c5c5;
+  width: 80%;
+  margin: 0 auto;
+  padding-top: 100px;
+}
+
+.GradelyParentSection .title {
+  padding-bottom: 10px;
+  border-bottom: 1px solid #c5c5c5;
+  color: #2A4F77;
+}
+
+.GradelyParentSection .listButtons {
+  margin-top: 75px;
+}
+
+.GradelyParentSection .listButtons button {
+  background: #F5F5F5;
+  margin-top: 20px;
+  border-radius: 50px;
+  border: none;
+  width: 50%;
+  text-align: left;
+  color: #555555;
+  padding: 5px 15px;
+  font-weight: 700;
+}
+
+.GradelyParentSection .listButtons button.active {
+  background: white;
+  margin-top: 20px;
+  border-radius: 50px;
+  border: 1px solid #113255;
+  width: 50%;
+  text-align: left;
+  padding: 5px 15px;
+  color: #113255;
+  font-weight: 700;
+}
+
+.GradelyParentSection .listButtons button:focus {
+  outline: none;
+}
+
+.GradelyParentSection .gettingStarted .moreInformationDiv {
+  padding: 5px;
+  margin-top: 15px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.GradelyParentSection .gettingStarted .getStartedText {
+  color: #757575;
+}
+
+.GradelyParentSection .gettingStarted .getStartedText:hover {
+  text-decoration: none;
+}
+
+.GradelyParentSection .gettingStarted h4 {
+  color: #113255;
+  cursor: pointer;
+}
+
+.GradelyParentSection .gettingStarted h4:hover {
+  text-decoration: underline;
+}
+
+.GradelyParentSection .gettingStarted .fa-angle-right {
+  font-size: 25px;
+  color: #757575;
+}
+
+.GradelyParentSection .addingMyChild .moreInformationDiv {
+  padding: 5px;
+  margin-top: 15px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.GradelyParentSection .addingMyChild .getStartedText {
+  color: #757575;
+}
+
+.GradelyParentSection .addingMyChild .getStartedText:hover {
+  text-decoration: none;
+}
+
+.GradelyParentSection .addingMyChild h4 {
+  color: #113255;
+  cursor: pointer;
+}
+
+.GradelyParentSection .addingMyChild h4:hover {
+  text-decoration: underline;
+}
+
+.GradelyParentSection .addingMyChild .fa-angle-right {
+  font-size: 25px;
+  color: #757575;
+}
+
+.GradelyParentSection .PayemntMethod .moreInformationDiv {
+  padding: 5px;
+  margin-top: 15px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.GradelyParentSection .PayemntMethod .getStartedText {
+  color: #757575;
+}
+
+.GradelyParentSection .PayemntMethod .getStartedText:hover {
+  text-decoration: none;
+}
+
+.GradelyParentSection .PayemntMethod h4 {
+  color: #113255;
+  cursor: pointer;
+}
+
+.GradelyParentSection .PayemntMethod h4:hover {
+  text-decoration: underline;
+}
+
+.GradelyParentSection .PayemntMethod .fa-angle-right {
+  font-size: 25px;
+  color: #757575;
+}
+
+.GradelyParentSection .moreHelpSection .container .row .col-sm-4 h5 {
+  color: #959595;
+  font-weight: 700;
+}
+
+.GradelyParentSection .moreHelpSection .container .row .col-sm-4 p {
+  color: #353535;
+  font-weight: 500;
+}
+
+.GradelyParentSection .moreHelpSection .container .row .col-sm-4 button {
+  background: #2A4F77;
+  color: white;
+  font-size: 15px;
+  padding: 10px 15px;
+  font-weight: 500;
+  border: 2px solid #F5F5F5;
+  border: none;
+  border-radius: 50px;
+  -webkit-transition: 300ms ease;
+  transition: 300ms ease;
+}
+
+.GradelyParentSection .moreHelpSection .container .row .col-sm-4 button:focus {
+  outline: none;
+}
+
+.GradelyParentSection .moreHelpSection .container .row .col-sm-4 button:hover {
+  background: #F5F5F5;
+  color: #2A4F77;
+  border: 2px solid #2A4F77;
+  font-weight: 600;
+}
+
+.getUpdates {
+  padding-top: 120px;
+  background: #DBF5F8;
+}
+
+.getUpdates .container {
+  padding-bottom: 50px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.getUpdates .container .updateText {
+  margin-bottom: 35px;
+  font-size: 35px;
+  color: #2A4F77;
+}
+
+.getUpdates .container input {
+  width: 400px;
+  padding: 10px 20px;
+  border-radius: 50px;
+  border: 1px solid #757575;
+  font-weight: 600;
+}
+
+.getUpdates .container input:focus {
+  outline: none;
+}
+
+.getUpdates .container button {
+  background: #FAA017;
+  color: #08384D;
+  font-weight: 700;
+  padding: 10px 25px;
+  border-radius: 50px;
+  border: 2px solid #DBF5F8;
+  -webkit-transition: 300ms ease;
+  transition: 300ms ease;
+}
+
+.getUpdates .container button:focus {
+  outline: none;
+}
+
+.getUpdates .container button:hover {
+  background: #DBF5F8;
+  color: #08384D;
+  border: 2px solid #FAA017;
+}
+
+footer {
+  background: #DBF5F8;
+}
+
+footer .container .icons .fab {
+  font-size: 30px;
+  padding-right: 15px;
+  color: #113255;
+  cursor: pointer;
+  -webkit-transition: 300ms ease;
+  transition: 300ms ease;
+}
+
+footer .container .icons .fab:hover {
+  color: #0a1c30;
+}
+
+footer .container .row .col-md-3 {
+  margin-right: 20px;
+}
+
+footer .container .row .col-md-3 img {
+  width: 200px;
+}
+
+footer .container .row .col-sm-4 p {
+  font-size: 17px;
+  color: #87A9B4;
+  font-weight: 700;
+}
+
+footer .container .row .col-sm-4 ul li {
+  list-style: none;
+  padding-top: 15px;
+  color: #555555;
+  font-weight: 600;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+footer .container .row .col-sm-4 ul li:hover {
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 1062px) {
+  .listButtons button {
+    font-size: 13px !important;
+    padding: 0px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .listItems {
+    display: none;
+  }
+  .responsiveNavIcon {
+    display: block !important;
+  }
+  .container_gradelyParent {
+    padding: 0px !important;
+  }
+  .container_gradelyParent .col-md-4 {
+    margin-bottom: 35px;
+  }
+  .Gradely {
+    padding-top: 15px;
+  }
+  .moreHelpSection .container .row .col-sm-4 {
+    margin-bottom: 40px;
+  }
+  .getUpdates input {
+    width: 100% !important;
+  }
+  .getUpdates button {
+    margin-top: 15px;
+    width: 100% !important;
+  }
+  .icons {
+    margin-bottom: 50px;
+  }
+  .listButtons button {
+    font-size: 13px !important;
+    padding: 0px;
+  }
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,721 @@
+// Import a Google fonts Embed (url)
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+// Selecting every single element in HTML
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+// logo in the navigation bar
+.logo {
+
+    // Image logo 
+    img {
+        width: 150px;
+        margin-top: 5px;
+    }
+}
+
+
+// Responsive navigationBar 
+.navSide {
+    position: fixed;
+    top: 0;
+    right: 0;
+    background: #F5F5F5;
+    box-shadow: 15px 0px 25px 5px black;
+    width: 350px;
+    padding-top: 65px;
+    padding-left: 50px;
+    z-index: 5;
+    height: 100%;
+    transform: translateX(110%);
+    transition: .5s ease;
+
+    // CloseButton in the sideNav
+    .fa-times {
+        position: absolute;
+        top: 15px;
+        right: 25px;
+        font-size: 25px;
+        cursor: pointer;
+        transition: 200ms ease;
+    }
+
+    // CloseButton in the sideNav : hover
+    .fa-times:hover {
+        color: gray;
+    }
+
+    // UnlistItems in sideNav
+    ul {
+        padding-top: 15px;
+
+        // ListItems in sideNav
+        li {
+            margin-top: 25px;
+            list-style: none;
+            font-size: 20px;
+            color: #757575;
+            font-weight: 600;
+            cursor: pointer;
+            transition: 300ms ease;
+        }
+
+        // ListItems in sideNav : hover
+        li:hover {
+            text-decoration: underline;
+        }
+    }
+
+    // Button (Sign up)
+    button {
+        text-transform: uppercase;
+        background: #FAA017;
+        border-radius: 50px;
+        color: #08384D !important;
+        font-weight: bold;
+        padding: 5px 25px;
+        transition: .3s ease;
+        border: none;
+        border: 2px solid #F5F5F5;
+    }
+
+    // Button Focus
+
+    button:focus {
+        outline: none;
+    }
+
+    // Button (Sign up) hover 
+    button:hover {
+        background: #F5F5F5;
+        border: 2px solid #FAA017;
+        color: #FAA017;
+    }
+
+    img {
+        width: 200px;
+    }
+}
+
+// NavSide active class
+.navSide.active {
+    transform: translateX(0%);
+
+}
+
+
+// Header & Input field section backgroundColor
+.menuBarSection {
+    background-color: #DBF5F8;
+}
+
+// Overlay 
+#overlay {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.596);
+    opacity: 0;
+    z-index: 1;
+    pointer-events: none;
+    transition: .3s ease;
+}
+
+// Overlay active class
+#overlay.active {
+    opacity: 1;
+    pointer-events: all;
+}
+
+
+// Header
+header {
+    padding-top: 10px;
+
+    // Repsonsive navbar in @media queries 
+    .responsiveNavIcon {
+        font-size: 30px;
+        display: none;
+        cursor: pointer;
+        transition: .3s ease;
+    }
+
+    // Repsonsive navbar in @media queries :hover
+
+    .responsiveNavIcon:hover {
+        color: #757575;
+    }
+
+    // Container for making width 80%
+
+    .container_width {
+        width: 80%;
+        margin: 0 auto;
+
+        // List items div 
+        .listItems {
+
+            // UnlistItems
+            ul {
+                margin-top: 10px;
+                text-transform: uppercase;
+
+                // Listitems
+                li {
+                    list-style: none;
+                    padding-left: 40px;
+                    color: #757575;
+                    font-weight: 600;
+                    cursor: pointer;
+                }
+
+                // Button (Sign up)
+                button {
+                    text-transform: uppercase;
+                    background: #FAA017;
+                    border-radius: 50px;
+                    color: #08384D !important;
+                    font-weight: bold;
+                    padding: 5px 25px;
+                    transition: .3s ease;
+                    border: none;
+                    border: 2px solid #F5F5F5;
+                }
+
+                // Button Focus
+
+                button:focus {
+                    outline: none;
+                }
+
+                // Button (Sign up) hover 
+                button:hover {
+                    background: #F5F5F5;
+                    border: 2px solid #FAA017;
+                    color: #FAA017;
+                }
+            }
+        }
+    }
+}
+
+// Container field for input form
+.container_Field {
+    padding-top: 65px;
+    width: 80%;
+    margin: 0 auto;
+
+    // div InputFieldAnswers
+    .inputFieldAnswers {
+        position: relative;
+
+        // Icon in the InputFieldAnswers
+        .fa-search {
+            position: absolute;
+            top: 12px;
+            right: 20px;
+            font-size: 25px;
+            color: #F3B556;
+            cursor: pointer;
+            transition: 300ms ease;
+        }
+
+        // Icon in the InputFieldAnswers : hover
+        .fa-search:hover {
+            color: rgb(240, 152, 21);
+        }
+
+        // Input 
+        input {
+            padding: 12px 20px;
+            border-radius: 50px;
+            border: 1px solid rgb(180, 180, 180);
+            width: 100%;
+            font-weight: 500;
+        }
+
+        // Input : focus
+        input:focus {
+            outline: none;
+        }
+    }
+}
+
+
+// Container for the paragraph underneath the input
+.Gradely {
+    padding-top: 50px;
+    padding-bottom: 15px;
+
+    // Container for support paragraph's
+    .support {
+
+        // "Gradely Support" text
+        .gradelyParent {
+            color: #2A4F77;
+        }
+
+        // Paragraph
+        p {
+            cursor: pointer;
+            font-weight: 500;
+        }
+    }
+}
+
+
+// Gradely Parent Section 
+.GradelyParentSection {
+    width: 100%;
+    background: #F5F5F5;
+    // Container for GradeParent (Gettings started)
+
+    // Container to keep width 80%
+    .container_gradelyParent {
+        border-bottom: 1px solid #c5c5c5;
+        width: 80%;
+        margin: 0 auto;
+        padding-top: 100px;
+    }
+
+    // Title Gradely Parent
+    .title {
+        padding-bottom: 10px;
+        border-bottom: 1px solid #c5c5c5;
+        color: #2A4F77;
+
+    }
+
+    // Buttons list (My account, Payment & Billing, Adding my Child)
+    .listButtons {
+        margin-top: 75px;
+
+        // Button
+        button {
+            background: #F5F5F5;
+            margin-top: 20px;
+            border-radius: 50px;
+            border: none;
+            width: 50%;
+            text-align: left;
+            color: #555555;
+            padding: 5px 15px;
+
+            font-weight: 700;
+        }
+
+        // Button active class
+        button.active {
+            background: white;
+            margin-top: 20px;
+            border-radius: 50px;
+            border: 1px solid #113255;
+            width: 50%;
+            text-align: left;
+            padding: 5px 15px;
+            color: #113255;
+            font-weight: 700;
+
+        }
+
+        // Button focus
+        button:focus {
+            outline: none;
+        }
+    }
+
+    // Getting started section
+    .gettingStarted {
+
+        // Div with title and arrow at the end
+        .moreInformationDiv {
+            padding: 5px;
+            margin-top: 15px;
+            border-bottom: 1px solid rgb(224, 224, 224);
+        }
+
+        // H4 (Getting started text)
+        .getStartedText {
+            color: #757575;
+        }
+
+        // H4 (Getting started text) : Hover
+        .getStartedText:hover {
+            text-decoration: none;
+        }
+
+        // H4
+        h4 {
+            color: #113255;
+            cursor: pointer;
+        }
+
+        // H4 : Hover
+        h4:hover {
+            text-decoration: underline;
+        }
+
+        // Arrow icon
+        .fa-angle-right {
+            font-size: 25px;
+            color: #757575;
+        }
+    }
+
+    // Adding My Child section
+    .addingMyChild {
+
+        // Div with title and arrow at the end
+        .moreInformationDiv {
+            padding: 5px;
+            margin-top: 15px;
+            border-bottom: 1px solid rgb(224, 224, 224);
+        }
+
+        // H4 (Getting started text)
+        .getStartedText {
+            color: #757575;
+        }
+
+        // H4 (Getting started text) : Hover
+        .getStartedText:hover {
+            text-decoration: none;
+        }
+
+        // H4
+        h4 {
+            color: #113255;
+            cursor: pointer;
+        }
+
+        // H4 : Hover
+        h4:hover {
+            text-decoration: underline;
+        }
+
+        // Arrow icon
+        .fa-angle-right {
+            font-size: 25px;
+            color: #757575;
+        }
+    }
+
+    // Adding My Child section
+    .PayemntMethod {
+
+
+        // Div with title and arrow at the end
+        .moreInformationDiv {
+            padding: 5px;
+            margin-top: 15px;
+            border-bottom: 1px solid rgb(224, 224, 224);
+        }
+
+        // H4 (Getting started text)
+        .getStartedText {
+            color: #757575;
+        }
+
+        // H4 (Getting started text) : Hover
+        .getStartedText:hover {
+            text-decoration: none;
+        }
+
+        // H4
+        h4 {
+            color: #113255;
+            cursor: pointer;
+        }
+
+        // H4 : Hover
+        h4:hover {
+            text-decoration: underline;
+        }
+
+        // Arrow icon
+        .fa-angle-right {
+            font-size: 25px;
+            color: #757575;
+        }
+    }
+
+    // More help section
+    .moreHelpSection {
+
+        // Container
+        .container {
+
+            // Row
+            .row {
+
+                // Bootstrap col-sm-4 (Grid system)
+                .col-sm-4 {
+
+                    // h5
+                    h5 {
+                        color: #959595;
+                        font-weight: 700;
+                    }
+
+                    // P
+                    p {
+                        color: #353535;
+                        font-weight: 500;
+                    }
+
+                    // Button
+                    button {
+                        background: #2A4F77;
+                        color: white;
+                        font-size: 15px;
+                        padding: 10px 15px;
+                        font-weight: 500;
+                        border: 2px solid #F5F5F5;
+                        border: none;
+                        border-radius: 50px;
+                        transition: 300ms ease;
+                    }
+
+                    // Button : focus
+                    button:focus {
+                        outline: none;
+                    }
+
+                    // Button : hover
+                    button:hover {
+                        background: #F5F5F5;
+                        color: #2A4F77;
+                        border: 2px solid #2A4F77;
+                        font-weight: 600;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Get updates section
+.getUpdates {
+    padding-top: 120px;
+    background: #DBF5F8;
+
+    // Container
+    .container {
+        padding-bottom: 50px;
+        border-bottom: 1px solid rgb(224, 224, 224);
+
+        // Get update text
+        .updateText {
+            margin-bottom: 35px;
+            font-size: 35px;
+            color: #2A4F77;
+        }
+
+        // Input field
+        input {
+            width: 400px;
+            padding: 10px 20px;
+            border-radius: 50px;
+            border: 1px solid #757575;
+            font-weight: 600;
+        }
+
+        // Input field : focus
+        input:focus {
+            outline: none;
+        }
+
+        // Button
+        button {
+            background: #FAA017;
+            color: #08384D;
+            font-weight: 700;
+            padding: 10px 25px;
+            border-radius: 50px;
+            border: 2px solid #DBF5F8;
+            transition: 300ms ease;
+        }
+
+        // Button : focus
+        button:focus {
+            outline: none;
+        }
+
+        // Button : hover
+        button:hover {
+            background: #DBF5F8;
+            color: #08384D;
+            border: 2px solid #FAA017;
+        }
+    }
+}
+
+// Last footer in the web page
+footer {
+    background: #DBF5F8;
+
+    // Container
+    .container {
+
+        // Social media icons
+        .icons {
+
+            // Icons has classes of (.fab)
+            .fab {
+                font-size: 30px;
+                padding-right: 15px;
+                color: #113255;
+                cursor: pointer;
+                transition: 300ms ease;
+            }
+
+            // .fab : hover
+            .fab:hover {
+                color: #0a1c30;
+            }
+        }
+
+        // row
+        .row {
+            .col-md-3 {
+                margin-right: 20px;
+
+                img {
+                    width: 200px;
+
+                }
+
+            }
+
+            // Col-sm-4 (Grid system)
+            .col-sm-4 {
+
+                // P
+                p {
+                    font-size: 17px;
+                    color: #87A9B4;
+                    font-weight: 700;
+                }
+
+                // UnlistItems
+                ul {
+
+                    // ListItems
+                    li {
+                        list-style: none;
+                        padding-top: 15px;
+                        color: #555555;
+                        font-weight: 600;
+                        font-size: 14px;
+                        cursor: pointer;
+                    }
+
+                    // ListItems :hover
+
+                    li:hover {
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+// @media screen at maximum width 1062px
+@media screen and (max-width: 1062px) {
+
+    // Making listButtons smaller (My Account, Payment & Billing and etc.)
+    .listButtons {
+
+        // The actualy button
+        button {
+            font-size: 13px !important;
+            padding: 0px;
+        }
+    }
+}
+
+// @media screen at maximum width 767px
+
+@media screen and (max-width: 767px) {
+
+    // Display none on listItems in navBar to make the Bars appear
+    .listItems {
+        display: none;
+    }
+
+    // Icon bars for having a responsive navigation bar
+    .responsiveNavIcon {
+        display: block !important;
+    }
+
+    // Making sure that gradley section part has padding of 0px
+    .container_gradelyParent {
+        padding: 0px !important;
+
+        // Col-md-4 inside gradley section to have a margin-bottom
+        .col-md-4 {
+            margin-bottom: 35px;
+        }
+    }
+
+    // Gradley div container to be padding-top
+    .Gradely {
+        padding-top: 15px;
+    }
+
+    // More help section
+    .moreHelpSection {
+
+        // Container
+        .container {
+
+            // Row
+            .row {
+
+                // Col-sm-4 (Grid system) making it margin-bottom:
+                .col-sm-4 {
+                    margin-bottom: 40px;
+                }
+            }
+        }
+    }
+
+    // Subscribe button and update input section 
+    .getUpdates {
+
+        // Input
+        input {
+            width: 100% !important;
+        }
+
+        // Button
+        button {
+            margin-top: 15px;
+            width: 100% !important;
+        }
+    }
+
+    // Social media icons in the Footer. Giving them a margin-bottom
+    .icons {
+        margin-bottom: 50px;
+    }
+
+    // Making sure that the listButton has no padding and 13px as font-size (My Account, Payment & Billing and etc.)
+    .listButtons {
+
+        // Button
+        button {
+            font-size: 13px !important;
+            padding: 0px;
+        }
+    }
+}
