@@ -1,12 +1,12 @@
 // Import a Google fonts Embed (url)
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap');
 
 // Selecting every single element in HTML
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Open Sans', sans-serif;
 }
 
 // logo in the navigation bar
@@ -17,6 +17,10 @@
         width: 150px;
         margin-top: 5px;
     }
+}
+
+body {
+    background-color: #F5F5F5;
 }
 
 
@@ -111,7 +115,7 @@
 
 // Header & Input field section backgroundColor
 .menuBarSection {
-    background-color: #DBF5F8;
+    background: url("/images/heroBG.png");
 }
 
 // Overlay 
@@ -236,7 +240,7 @@ header {
         input {
             padding: 12px 20px;
             border-radius: 50px;
-            border: 1px solid rgb(180, 180, 180);
+            border: 1px solid #D5D5D5;
             width: 100%;
             font-weight: 500;
         }
@@ -291,6 +295,9 @@ header {
         border-bottom: 1px solid #c5c5c5;
         color: #2A4F77;
 
+        h1 {
+            font-weight: bold;
+        }
     }
 
     // Buttons list (My account, Payment & Billing, Adding my Child)
@@ -308,7 +315,7 @@ header {
             color: #555555;
             padding: 5px 15px;
 
-            font-weight: 700;
+            font-weight: normal;
         }
 
         // Button active class
@@ -316,12 +323,11 @@ header {
             background: white;
             margin-top: 20px;
             border-radius: 50px;
-            border: 1px solid #113255;
             width: 50%;
             text-align: left;
             padding: 5px 15px;
             color: #113255;
-            font-weight: 700;
+            font-weight: bold;
 
         }
 
@@ -409,7 +415,7 @@ header {
 
     // Adding My Child section
     .PayemntMethod {
-
+        position: relative;
 
         // Div with title and arrow at the end
         .moreInformationDiv {
@@ -448,8 +454,44 @@ header {
 
     // More help section
     .moreHelpSection {
+        position: relative;
+
+        // Circle 1
+        .circle1 {
+            background: #FCEACF;
+            width: 220px;
+            height: 130px;
+            background: #FCEACF;
+            border-bottom-left-radius: 110px;
+            border-bottom-right-radius: 110px;
+            border-bottom: 0;
+            position: absolute;
+            left: 81.91%;
+            top: 88.18%;
+            bottom: 0%;
+            z-index: -1;
+            opacity: 0.7;
+        }
+
+        // Circle 2 
+        .circle2 {
+            background: #F7D4D7;
+            width: 120px;
+            opacity: 0.5;
+            height: 130px;
+            border-bottom-left-radius: 110px;
+            border-bottom-right-radius: 110px;
+            border-bottom: 0;
+            position: absolute;
+            left: 6.23%;
+            right: 87.9%;
+            top: 90.85%;
+            bottom: 0.24%;
+            z-index: -1;
+        }
 
         // Container
+
         .container {
 
             // Row
@@ -473,14 +515,20 @@ header {
                     // Button
                     button {
                         background: #2A4F77;
-                        color: white;
-                        font-size: 15px;
-                        padding: 10px 15px;
+                        font-size: 13px;
+                        padding: 10px 25px;
                         font-weight: 500;
-                        border: 2px solid #F5F5F5;
                         border: none;
-                        border-radius: 50px;
+                        border-radius: 25px;
                         transition: 300ms ease;
+                        font-weight: bold;
+                        line-height: 160%;
+                        font-style: normal;
+                        letter-spacing: 0.01em;
+                        text-transform: uppercase;
+                        border: 2px solid #DBF5F8;
+                        color: #EEEEEE;
+
                     }
 
                     // Button : focus
@@ -493,7 +541,7 @@ header {
                         background: #F5F5F5;
                         color: #2A4F77;
                         border: 2px solid #2A4F77;
-                        font-weight: 600;
+                        font-weight: bold;
                     }
                 }
             }
@@ -501,10 +549,18 @@ header {
     }
 }
 
+
+// Wave image 
+.wavePng {
+    width: 100%;
+    padding-top: 45px;
+}
+
 // Get updates section
+
 .getUpdates {
-    padding-top: 120px;
     background: #DBF5F8;
+    padding-top: 60px;
 
     // Container
     .container {
@@ -523,8 +579,8 @@ header {
             width: 400px;
             padding: 10px 20px;
             border-radius: 50px;
-            border: 1px solid #757575;
-            font-weight: 600;
+            border: 1px solid #D5D5D5;
+            font-weight: 500;
         }
 
         // Input field : focus
@@ -536,11 +592,20 @@ header {
         button {
             background: #FAA017;
             color: #08384D;
-            font-weight: 700;
             padding: 10px 25px;
             border-radius: 50px;
             border: 2px solid #DBF5F8;
             transition: 300ms ease;
+
+            font-style: normal;
+            font-weight: bold;
+            font-size: 14px;
+            line-height: 160%;
+            /* or 22px */
+
+            text-align: center;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
         }
 
         // Button : focus
@@ -629,7 +694,16 @@ footer {
 }
 
 
+// Flowers 
+.flowers {
+    position: absolute;
+    right: -120px;
+    top: 200px;
+}
+
+
 // @media screen at maximum width 1062px
+
 @media screen and (max-width: 1062px) {
 
     // Making listButtons smaller (My Account, Payment & Billing and etc.)
@@ -640,6 +714,20 @@ footer {
             font-size: 13px !important;
             padding: 0px;
         }
+    }
+}
+
+@media screen and (max-width: 1220px) {
+    .flowers {
+        display: none;
+    }
+
+    .circle1 {
+        display: none;
+    }
+
+    .circle2 {
+        display: none;
     }
 }
 
