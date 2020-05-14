@@ -352,21 +352,14 @@ header {
             color: #757575;
         }
 
-        // H4 (Getting started text) : Hover
-        .getStartedText:hover {
-            text-decoration: none;
-        }
 
         // H4
         h4 {
             color: #113255;
             cursor: pointer;
+            text-decoration: none !important;
         }
 
-        // H4 : Hover
-        h4:hover {
-            text-decoration: underline;
-        }
 
         // Arrow icon
         .fa-angle-right {

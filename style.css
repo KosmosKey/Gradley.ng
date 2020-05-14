@@ -293,17 +293,10 @@ header .container_width .listItems ul button:hover {
   color: #757575;
 }
 
-.GradelyParentSection .gettingStarted .getStartedText:hover {
-  text-decoration: none;
-}
-
 .GradelyParentSection .gettingStarted h4 {
   color: #113255;
   cursor: pointer;
-}
-
-.GradelyParentSection .gettingStarted h4:hover {
-  text-decoration: underline;
+  text-decoration: none !important;
 }
 
 .GradelyParentSection .gettingStarted .fa-angle-right {
