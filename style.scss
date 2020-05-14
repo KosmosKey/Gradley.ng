@@ -1,12 +1,12 @@
 // Import a Google fonts Embed (url)
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
 // Selecting every single element in HTML
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Noto Sans', sans-serif;
 }
 
 // logo in the navigation bar
@@ -274,8 +274,48 @@ header {
     }
 }
 
+.card {
+    border: none !important;
+
+    .card-body {
+        background: #F5F5F5 !important;
+    }
+
+    .card-header {
+        text-decoration: none !important;
+        background: #F5F5F5 !important;
+
+        h4 {
+            transition: 100ms ease;
+        }
+
+        h4:hover {
+            color: #555555;
+            text-decoration: none !important;
+        }
+
+        button {
+            background: transparent;
+            outline: none !important;
+            border: none;
+        }
+
+        button:focus {
+            text-decoration: none;
+        }
+
+        button:hover {
+            text-decoration: none;
+        }
+
+
+    }
+}
+
+
 
 // Gradely Parent Section 
+
 .GradelyParentSection {
     width: 100%;
     background: #F5F5F5;
