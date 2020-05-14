@@ -297,7 +297,7 @@ header {
         button {
             background: transparent;
             outline: none !important;
-            border: none;
+            border: none !important;
         }
 
         button:focus {
